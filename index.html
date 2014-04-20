@@ -1,9 +1,27 @@
 <html>
 <head>
 <title>Test</title>
+<script type="text/Javascript">
+
+function on_off(){
+  
+    if (window.XMLHttpRequest){
+       // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp=new XMLHttpRequest();
+    }else{
+      // code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    
+    xmlhttp.open("GET","config.xml",false);
+    xmlhttp.send();
+    xmlDoc=xmlhttp.responseXML;
+}
+
+</script>
 </head>
 <body>
-<h1>Test 1</h1>
-<p>This is a test message</p>
+<h1>Flashlight</h1>
+<button onclick="function on_off()">Flashlight</button>
 </body>
 </html>
