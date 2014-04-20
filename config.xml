@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gap:plugin name="nl.x-services.plugins.flashlight" version="1.4.1" />
+
+//flashlight:gap:plugin name="nl.x-services.plugins.flashlight" version="1.4.1"
+
+<widget id="nl.x-services.plugins.flashlight" version="1.4.1">
+        <name>Flashlight</name>
+        <description>
+            Turns flashlight on and off.
+        </description>
+        <author email="Faraz7704@gmail.com" href="http://phonegap.com">
+            FK rokin
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+        <preference name="Fullscreen" value="true" />
+        <preference name="WebViewBounce" value="true" />
+    </widget>
