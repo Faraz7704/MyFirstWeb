@@ -18,23 +18,10 @@
 
   <asset src="www/Flashlight.js" target="js/plugins/Flashlight.js"/>
 
-  <!-- ios -->
-  <platform name="ios">
-
-    <config-file target="config.xml" parent="/*">
-      <feature name="Flashlight">
-        <param name="ios-package" value="Flashlight"/>
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/Flashlight.h"/>
-    <source-file src="src/ios/Flashlight.m"/>
-  </platform>
-
   <!-- android -->
   <platform name="android">
 
-    <config-file target="res/xml/config.xml" parent="/*">
+    <config-file target="config.xml" parent="/*">
       <feature name="Flashlight">
         <param name="android-package" value="nl.xservices.plugins.Flashlight" />
       </feature>
@@ -44,7 +31,7 @@
       <uses-permission android:name="android.permission.CAMERA"/>
     </config-file>
 
-    <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="Flashlight.java" target-dir=""/>
   </platform>
 
 </plugin>
