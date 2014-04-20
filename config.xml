@@ -1,4 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-html type="text/html" href="index.html">
-
 <gap:plugin name="nl.x-services.plugins.flashlight" version="1.4.1" />
